@@ -6,4 +6,4 @@
       tox_install_siblings to use it when building the venv.
     check:
       jobs:
-        - : tap-as-a-service-dsvm-intel-sriov
+        - tap-as-a-service-dsvm-intel-sriov
