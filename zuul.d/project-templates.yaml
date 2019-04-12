@@ -1,9 +1,15 @@
 - project-template:
     name: openstack-taas-jobs
     description: |
-      The standard openstack-cover-jobs but with neutron added as a
-      required-projects. This checks out the project code and allows
-      tox_install_siblings to use it when building the venv.
+      Runs Sriov job on tap-as-a-service project
     check:
       jobs:
         - tap-as-a-service-dsvm-intel-sriov
+
+- project-template:
+    name: openstack-lower-constraints-jobs
+    description: |
+      Runs openstack-tox-lower-constraints in the check pipeline.
+    check:
+      jobs:
+        - openstack-tox-lower-constraints
