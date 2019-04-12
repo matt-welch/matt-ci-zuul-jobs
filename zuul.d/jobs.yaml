@@ -50,7 +50,6 @@
       Uses tox with the ``lower-constraints`` environment,
       which should be configured to use Python 3 by default
       unless the project does not support Python 3.
-    irrelevant-files: *common-irrelevant-files
     vars:
       tox_envlist: lower-constraints
       bindep_profile: test py35 py36

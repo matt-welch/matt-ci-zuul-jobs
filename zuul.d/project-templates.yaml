@@ -6,6 +6,16 @@
       jobs:
         - tap-as-a-service-dsvm-intel-sriov:
             branches: master
+            irrelevant-files:
+              - ^(test-|)requirements.txt$
+              - ^.*\.rst$
+              - ^doc/.*$
+              - ^neutron/locale/.*$
+              - ^neutron/tests/unit/.*$
+              - ^releasenotes/.*$
+              - ^setup.cfg$
+              - ^tools/.*$
+              - ^tox.ini$
 
 
 - project-template:
