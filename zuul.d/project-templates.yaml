@@ -13,3 +13,9 @@
     check:
       jobs:
         - openstack-tox-lower-constraints
+
+- project-template:
+    name: tap-as-a-service-tempest-plugin-jobs
+    check:
+      jobs:
+        - tap-as-a-service-tempest-plugin

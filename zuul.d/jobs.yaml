@@ -54,3 +54,9 @@
     vars:
       tox_envlist: lower-constraints
       bindep_profile: test py35 py36
+
+- job:
+    name: tap-as-a-service-tempest-plugin
+    parent: devstack-tempest
+    description: |
+      Perform setup common to all tap-as-a-service tempest tests
