@@ -33,3 +33,15 @@
       jobs:
         - tap-as-a-service-tempest-plugin:
             branches: master
+
+- project-template:
+    name: system-required
+    description: |
+      Jobs that *every* project in OpenStack CI should have by default.
+
+      This is automatically added to all projects in OpenStack CI, no
+      repository should use this directly.
+    # Include a check queue so that initially every repo has a check queue
+    # and we can report invalid zuul.yaml files.
+    check:
+      jobs: []
