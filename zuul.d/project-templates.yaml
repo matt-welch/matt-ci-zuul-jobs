@@ -1,0 +1,9 @@
+- project-template:
+    name: openstack-taas-jobs
+    description: |
+      The standard openstack-cover-jobs but with neutron added as a
+      required-projects. This checks out the project code and allows
+      tox_install_siblings to use it when building the venv.
+    check:
+      jobs:
+        - : tap-as-a-service-dsvm-intel-sriov
