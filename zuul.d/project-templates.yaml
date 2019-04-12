@@ -4,7 +4,9 @@
       Runs Sriov job on tap-as-a-service project
     check:
       jobs:
-        - tap-as-a-service-dsvm-intel-sriov
+        - tap-as-a-service-dsvm-intel-sriov:
+            branches: master
+
 
 - project-template:
     name: openstack-lower-constraints-jobs
@@ -12,10 +14,12 @@
       Runs openstack-tox-lower-constraints in the check pipeline.
     check:
       jobs:
-        - openstack-tox-lower-constraints
+        - openstack-tox-lower-constraints:
+            branches: master
 
 - project-template:
     name: tap-as-a-service-tempest-plugin-jobs
     check:
       jobs:
-        - tap-as-a-service-tempest-plugin
+        - tap-as-a-service-tempest-plugin:
+            branches: master
